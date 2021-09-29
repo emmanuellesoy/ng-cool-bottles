@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ngCoolBottles app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Angular Cool Whater Bottle app is running!');
   });
 });
