@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/cart/services/cart.service';
 import { InventoryItem } from '../models/watterbottle-inventory-item.model';
 
 @Component({
@@ -10,10 +11,14 @@ export class InventoryListComponent implements OnInit {
 
   data = inventory;
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
 
+  }
+
+  onAddItemEvent(item: InventoryItem): void {
+   this.cartService.addToCart(item);
   }
 
 }

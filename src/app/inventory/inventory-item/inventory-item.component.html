@@ -7,7 +7,11 @@
         <img mat-card-image [src]="item?.itemImageUri | inventoryImage" alt="{{item?.itemName}}">
         <mat-card-content>
             <p>{{item?.itemDescription}}</p>
-            
         </mat-card-content>
     </mat-card>
+    <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="addToCart()">
+            Add To Cart
+        </button>
+    </mat-card-actions>
 </div>

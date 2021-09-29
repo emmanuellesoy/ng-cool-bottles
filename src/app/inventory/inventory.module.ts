@@ -4,7 +4,8 @@ import { InventoryListComponent } from './inventory-list/inventory-list.componen
 import { InventoryItemComponent } from './inventory-item/inventory-item.component';
 import { MatCardModule } from "@angular/material/card";
 import { InventoryImagePipe } from './pipes/inventory-image.pipe';
-
+import { MatButtonModule } from "@angular/material/button";
+import { CartModule } from '../cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,8 @@ import { InventoryImagePipe } from './pipes/inventory-image.pipe';
   imports: [
     CommonModule,
     MatCardModule,
+    MatButtonModule,
+    CartModule
   ]
 })
 export class InventoryModule { }
